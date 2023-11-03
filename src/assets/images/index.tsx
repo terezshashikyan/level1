@@ -1,0 +1,1 @@
+export {default as bmwWhite} from './bmw white.png';
