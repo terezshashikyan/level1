@@ -1,6 +1,7 @@
+import HomePageSlider from './HomePageSlider';
 const Home = () => (
     <section>
-        Home
+        <HomePageSlider/>
     </section>
 );
 

@@ -1,4 +1,14 @@
-   .footerNavbar {
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #094067;
+    padding: 16px 0;
+    }
+  
+  .footerNavbar {
+    padding: 16px 0;
     display:flex;
     flex-direction: column;
     align-items: center;
