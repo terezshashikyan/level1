@@ -1,68 +1,96 @@
-  .slick-slider {
-    position: relative;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
+.homePageSlider {
+&__slide {
+  position: relative;
+  width: 100%;
+  height: 519px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width:768px) {
+    height: 277px;
+}
+@media only screen and (max-width:321px) {
+  height: 162px;
+}
+}
+&__img {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+&__text {
+  text-align: start;
+  position: absolute;
+  top: 32px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @media only screen and (max-width:321px) {
+    display: none;
+}
+}
+}
 
-  .slick-slider > img {
-    padding: 0;
-    margin: 0;
-    border: 0;
+
+.slick {
+  &-slider {
     width: 100%;
   }
 
-  .slick-prev {
-  top: 50%;
-  bottom: 50%;
-  left: 20%;
-  right: 0;
-  background-color: red;
+  &-slide {
+    width: 100%;
   }
 
-  .slick-slide {
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
-
-  .slick-next {
-    top: 50%;
-    bottom: 50%;
-    left: 80%;
-    right: 0;
-    background-color: red;
-    }
-  // .slick-slider h3 {
-  //   position: absolute;
-  //   bottom: 20px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   background-color: rgba(0, 0, 0, 0.5);
-  //   color: blueviolet;
-  //   padding: 10px;
-  //   border-radius: 5px;
-  //   font-size: 16px;
-  //   text-align: center;
-  // }
-  
-  // .slick-prev,
-  // .slick-next {
-  //   font-size: 24px;
-  //   z-index: 1;
-  //   color: #333;
-  // }
-  
-  .slick-prev:hover,
-  .slick-next:hover {
-    color: #555;
-  }
-
-  .slick-dots {
-    position: absolute;
-    bottom: 16px;
+  &-dots {
+    width: 100%;
     left: 0;
     right: 0;
-    text-align: center;
+    position: absolute;
+    bottom: 16px;
+    @media only screen and (max-width:321px) {
+      display: none;
+    }
   }
+
+  &-prev {
+      top: 50%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      color: white;
+  }
+
+  &-next {
+    width: 100%;
+    top: 50%;
+    left: 0;
+    right: 0;
+    }
+
+  &-next::before {
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 1142px;
+    padding: 0 16px;
+    display: flex !important;
+    justify-content: end;
+    align-items: center;
+  }
+
+  &-prev::before {
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 1142px;
+    padding: 0 16px;
+    display: flex !important;
+    justify-content: left;
+    align-items: center;
+    color: white;
+  }
+}
+
+  

@@ -1,0 +1,54 @@
+.carItem {
+    min-width: 200px;
+    &__img{
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    &__soldout {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+    }
+    &__priceTag{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #FFF;
+        /* Body 2 / Roboto / Regular / 14 */
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.035px;
+        border-radius: 0px 8px 0px 0px;
+        background: var(--Sec, #094067);
+        padding: 6px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        &_name {
+            color: #094067;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0.024px;
+        }
+        &_viewDetailsLink {
+            color: #3DA9FC;
+            text-align: right;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0.024px;
+        }
+    }
+
+}
