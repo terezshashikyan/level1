@@ -4,7 +4,7 @@ import "./style.scss";
 const Auctions = () => {
   const auctionsRenderer = AUCTIONS.map((auction) => (
     <div className="auctions__row" key={auction.id}>
-      <div className="auctions__row_item">
+      <div className="auctions__row_item auctions__row_firstItem">
         <p className="auctions__time">
           <p className="auctions__mobile_title">Sale Time: </p> {auction.time}
         </p>
