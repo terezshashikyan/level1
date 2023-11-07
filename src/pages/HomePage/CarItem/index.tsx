@@ -6,7 +6,7 @@ import "./style.scss";
 
 const CarItem: FC<ICarItemComponent> = ({ car }) => {
   return (
-    <div className="carItem" key={car.id}>
+    <div className="carItem" >
       <div className="carItem__img">
         <img src={car.src} alt="car" />
         {car.soldOut ? (

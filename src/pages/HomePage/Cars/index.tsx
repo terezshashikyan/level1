@@ -6,7 +6,7 @@ import "./style.scss";
 
 const Cars = () => {
   const carsRenderer = CARS.filter((car) => !car.soldOut).map((car) => (
-    <CarItem car={car} />
+    <CarItem car={car} key={car.id}/>
   ));
 
   return (
