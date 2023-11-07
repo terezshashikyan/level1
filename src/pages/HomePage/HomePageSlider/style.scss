@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 .homePageSlider {
 &__slide {
   position: relative;
@@ -6,10 +8,10 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
-  @media only screen and (max-width:768px) {
+  @media only screen and (max-width: $tablet) {
     height: 277px;
 }
-@media only screen and (max-width:321px) {
+@media only screen and (max-width: $mobile) {
   height: 162px;
 }
 }
@@ -29,7 +31,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  @media only screen and (max-width:321px) {
+  @media only screen and (max-width: $mobile) {
     display: none;
 }
 }
@@ -51,7 +53,7 @@
     right: 0;
     position: absolute;
     bottom: 16px;
-    @media only screen and (max-width:321px) {
+    @media only screen and (max-width:$mobile) {
       display: none;
     }
   }

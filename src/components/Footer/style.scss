@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 footer {
     width: 100%;
     display: flex;
@@ -27,7 +29,7 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 24px;
-        @media only screen and (max-width:320px) {
+        @media only screen and (max-width:$mobile) {
             gap: 10px;
         }
         }
@@ -37,7 +39,7 @@ footer {
         align-items: flex-start;
         border-radius: 34px;
         background: #FFF; 
-        @media only screen and (max-width:320px) {
+        @media only screen and (max-width:$mobile) {
             padding: 10px;
         }
     }
@@ -52,7 +54,7 @@ footer {
         font-weight: 900;
         line-height: normal;
         letter-spacing: 0.048px;
-        @media only screen and (max-width:768px) {
+        @media only screen and (max-width:$tablet) {
             display: none;
         }
     }

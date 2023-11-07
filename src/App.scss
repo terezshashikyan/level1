@@ -1,6 +1,5 @@
+@import "./variables.scss";
 
-$mobile: 320px;
-$tablet: 768px;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -19,7 +18,7 @@ img, picture, video, canvas, svg {
 input, button, textarea, select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, span {
   overflow-wrap: break-word;
 }
 #root, #__next {

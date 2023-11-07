@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 header {
     width: 100%;
     display: flex;
@@ -15,7 +17,7 @@ header {
         display: flex;
         gap: 32px;
         padding: 8px 0px;
-        @media only screen and (max-width:768px) {
+        @media only screen and (max-width:$tablet) {
             display: none;
         }
         &_item{
@@ -49,7 +51,7 @@ header {
              }
              }
     &__sideBar {
-        @media only screen and (min-width:768px) {
+        @media only screen and (min-width:$tablet) {
             display: none;
         }
     }
