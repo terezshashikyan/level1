@@ -10,7 +10,6 @@
     }
     
     &__header {
-        padding: 10px;
         display: grid; 
         border: 1px solid #094067;
         grid-template-columns: 30% 38% 7% 25% ;
@@ -20,6 +19,7 @@
             display: none;
         }
         &_title {
+            padding: 10px 8px;
             color: #FFF;
             /* Subtitle 1 / Roboto / Regular / 16 */
             font-family: Roboto;
@@ -34,6 +34,7 @@
     &__row {
         display: grid; 
         grid-template-columns: 30% 38% 7% 25% ;
+
         @media screen and (min-width: 321px) {
             &:last-child > &_lastItem{
                 border-radius: 0px 0px 16px 0px;
