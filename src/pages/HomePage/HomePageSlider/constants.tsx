@@ -1,5 +1,4 @@
 import {sliderImg1, sliderImg2, sliderImg3} from '../../../assets/images';
-import { carouselImg } from '../../../assets/images';
 
 export const slides = [
     {

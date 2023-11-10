@@ -1,18 +1,15 @@
 .cars {
    &__heading {
-       margin-bottom: 16px;
         color: #094067;
-        /* H3 / Roboto / Regular / 48 */
-        font-family: Roboto;
         font-size: 48px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
+        margin-bottom: 16px;
+        font-family: Roboto;
     }
     &__container {
+        gap: 32px;
         display: flex;
         overflow: scroll;
-        gap: 32px;
     }
     &__container::-webkit-scrollbar {
         display: none;

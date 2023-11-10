@@ -1,7 +1,7 @@
-import HomePageSlider from "./HomePageSlider";
-import SoldoutCars from "./SoldoutCars";
-import Auctions from "./Auctions";
 import Cars from "./Cars";
+import Auctions from "./Auctions";
+import SoldoutCars from "./SoldoutCars";
+import HomePageSlider from "./HomePageSlider";
 
 import "./style.scss";
 

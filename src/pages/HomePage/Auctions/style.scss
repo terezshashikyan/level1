@@ -2,33 +2,28 @@
 
 .auctions {
     &__mainTitle {
-        margin-bottom: 16px;
         color:#094067;
-        font-family: Roboto;
         font-size: 48px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
+        font-family: Roboto;
+        margin-bottom: 16px;
     }
     
     &__header {
         display: grid; 
-        border: 1px solid #094067;
-        grid-template-columns: 30% 38% 7% 25% ;
-        border-radius: 16px 16px 0 0;
         background-color: #094067;
+        border: 1px solid #094067;
+        border-radius: 16px 16px 0 0;
+        grid-template-columns: 30% 38% 7% 25% ;
         @media only screen and (max-width: $mobile) {
             display: none;
         }
         &_title {
-            padding: 10px 8px;
             color: #FFF;
-            /* Subtitle 1 / Roboto / Regular / 16 */
-            font-family: Roboto;
             font-size: 16px;
-            font-style: normal;
             font-weight: 400;
-            line-height: normal;
+            padding: 10px 8px;
+            font-family: Roboto;
             letter-spacing: 0.024px;
         }
     }
@@ -46,25 +41,25 @@
               }
         }
         @media screen and (max-width: $mobile) {
-            display: flex;
-            flex-direction: column;
-            border-radius: 16px;
-            border: 1px solid rgba(95, 108, 123, 0.20);
-            background: var(--Snow-white, #FFF);
-            box-shadow: 0px 4px 38px 0px rgba(9, 64, 103, 0.12);
             width: 100%;
+            display: flex;
             max-width: 288px;
-            padding: 8px 8px 16px 10px;
+            background: #FFF;
+            border-radius: 16px;
             margin-bottom: 16px;
+            flex-direction: column;
+            padding: 8px 8px 16px 10px;
+            border: 1px solid rgba(95, 108, 123, 0.20);
+            box-shadow: 0px 4px 38px 0px rgba(9, 64, 103, 0.12);
         }
 
           &_item {
-            display: flex;
-            align-items: start;
-            justify-content: left;
-            flex-wrap: wrap;
             gap: 8px;
             padding: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            justify-content: left;
             border: 1px solid rgba(95, 108, 123, 0.20); 
             @media screen and (max-width: $mobile) {
                 border: none;
@@ -78,78 +73,63 @@
 
     &__time {
         color:#5F6C7B;
-        font-family: Quantico;
         font-size: 14px;
-        font-style: italic;
         font-weight: 700;
-        line-height: normal;
+        font-style: italic;
+        font-family: Quantico;
     }
 
     &__liveNowBanner {
         color: #FFF;
-        /* Caption /  Roboto / Regular / 12 */
-        font-family: Roboto;
         font-size: 12px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
+        padding: 2px 4px;
+        font-family: Roboto;
         letter-spacing: 0.048px;
         background-color:#4CAF50;
-        padding: 2px 4px;
     }
 
     &__countryText, &_itemsnumberText {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         gap: 4px;
+        display: flex;
         flex-wrap: wrap;
-        color: var(--Tert, #5F6C7B);
-        font-family: Roboto;
+        color:#5F6C7B;
         font-size: 14px;
-        font-style: normal;
         font-weight: 500;
-        line-height: normal;
+        align-items: center;
+        font-family: Roboto;
+        justify-content: center;
         letter-spacing: 0.014px;
     }
 
     &__listLink {
-        color: var(--Success, #4CAF50);
-        text-align: center;
-        /* Subtitle 2 / Roboto / Medium / 14 */
-        font-family: Roboto;
+        color:#4CAF50;
         font-size: 14px;
-        font-style: normal;
         font-weight: 500;
-        line-height: normal;
+        text-align: center;
+        font-family: Roboto;
         letter-spacing: 0.014px;
     }
 
     &__joinButton {
-        color: #FFF;
-        /* Subtitle 2 / Roboto / Medium / 14 */
-        font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.014px;
-        border-radius: 15px;
-        background: var(--Success, #4CAF50);
-        box-shadow: 0px 8px 38px 0px rgba(76, 175, 80, 0.32);
-        border: none;
         width: 80%;
         padding: 6px;
+        color: #FFF;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 15px;
+        background:#4CAF50;
+        font-family: Roboto;
+        letter-spacing: 0.014px;
+        box-shadow: 0px 8px 38px 0px rgba(76, 175, 80, 0.32);
     }
 
     &__mobile_title {
-        color: var(--Tert, #5F6C7B);
-        /* Mobile Subtitle 1 / Roboto / Regular / 15 */
-        font-family: Roboto;
+        color:#5F6C7B;
         font-size: 15px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
+        font-family: Roboto;
         letter-spacing: 0.023px;
         @media screen and (min-width: $mobile) {
             display: none;

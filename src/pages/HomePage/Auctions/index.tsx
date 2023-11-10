@@ -1,4 +1,5 @@
 import { AUCTIONS } from "./constants";
+
 import "./style.scss";
 
 const Auctions = () => {

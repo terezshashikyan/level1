@@ -5,7 +5,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #094067;
+    background-color:#094067;
     }
   
 .header{
@@ -50,7 +50,7 @@ header {
                 }
              }
              }
-    &__sideBar {
+    &__sidebar {
         @media only screen and (min-width:$tablet) {
             display: none;
         }

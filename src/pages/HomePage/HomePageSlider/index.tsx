@@ -1,6 +1,5 @@
 import Slider from "react-slick";
 import { slides } from "./constants";
-import { ArrowLeft, ArrowRight } from "../../../assets/icons";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

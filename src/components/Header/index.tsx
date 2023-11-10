@@ -1,4 +1,5 @@
 import { Logo, us, Hamburger } from "../../assets/icons";
+import Sidebar from "../Sidebar";
 import ArrowButton from "../ArrowButton";
 
 import "./style.scss";
@@ -8,27 +9,25 @@ const Header = () => (
     <div className="container header">
       <img className="header__logo" src={Logo} alt="logo" />
       <div className="header__items">
-        <div className="header__items_item header__items_home active">
+        <div className="header__items_item header__items_home">
           <a className="header__items_item_link" href="/">
             Home
           </a>
         </div>
-        <div className="header__items_item header__items_auctions">
+        <div className="header__items_item header__items_auctions active">
           <a className="header__items_item_link" href="/auctions">
             Auctions
           </a>
           <ArrowButton />
         </div>
-        <div className="header__items_item header__items_login">
-          <a className="header__items_item_link" href="#login">
-            Log In
+
+        <div className="header__items_item header__items_user">
+          <a className="header__items_item_link" href="/auctions">
+            Adrine
           </a>
+          <ArrowButton />
         </div>
-        <div className="header__items_item header__items_register">
-          <a className="header__items_item_link" href="#register">
-            Register
-          </a>
-        </div>
+
         <div className="header__items_item header__items_language">
           <img src={us} alt="" />
           <a className="header__items_item_link" href="#language">
@@ -42,14 +41,11 @@ const Header = () => (
           </a>
           <ArrowButton />
         </div>
-        <div className="header__items_item header__items_contactus">
-          <a className="header__items_item_link" href="#contacus">
-            Contact Us
-          </a>
-        </div>
       </div>
-      <img className="header__sideBar" src={Hamburger} alt="menu" />
     </div>
+    <div className="header__sidebar">
+      <Sidebar/>
+      </div>
   </header>
 );
 

@@ -1,4 +1,5 @@
 import { geo } from "../../../assets/icons";
+
 export const AUCTIONS = [
     {
       id: 11,
