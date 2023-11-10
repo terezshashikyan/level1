@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { SoldOut } from "../../../assets/icons";
-import { ICarItemComponent } from "../../../types";
+import { ICarItemComponent } from "./types";
 
 import "./style.scss";
 
